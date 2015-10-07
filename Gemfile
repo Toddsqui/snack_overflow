@@ -9,6 +9,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'sqlite3'
+gem 'bootstrap-sass','~> 3.3.5'
 
 ################################
 ##     Development Group      ##
