@@ -12,6 +12,7 @@ gem 'sqlite3'
 gem 'bootstrap-sass','~> 3.3.5'
 gem 'better_errors'
 gem 'binding_of_caller'
+gem 'devise'
 
 ################################
 ##     Development Group      ##
