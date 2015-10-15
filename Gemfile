@@ -31,6 +31,10 @@ group :development, :test do
   gem 'pry-byebug'
 end
 
+group :development do
+  gem "better_errors"
+end
+
 ################################
 ##         Test Group         ##
 ################################
