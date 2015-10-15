@@ -4,11 +4,11 @@ This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
-
+<br> What are you trying to do???? 
 * Ruby version
 
 * System dependencies
-
+<p>This is lorem ipsum text</p> 
 * Configuration
 
 * Database creation
