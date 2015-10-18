@@ -13,11 +13,13 @@ gem 'bootstrap-sass','~> 3.3.5'
 gem 'better_errors'
 gem 'binding_of_caller'
 gem 'devise'
+gem 'foundation-rails'
 
 ################################
 ##     Development Group      ##
 ################################
 group :development do
+  gem 'rails_layout', github: 'RailsApps/rails_layout'
 end
 
 ################################
@@ -31,9 +33,6 @@ group :development, :test do
   gem 'pry-byebug'
 end
 
-group :development do
-  gem "better_errors"
-end
 
 ################################
 ##         Test Group         ##

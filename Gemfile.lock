@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/RailsApps/rails_layout.git
+  revision: a984b7e558812923ab8cdc284bd36a633c2a8d48
+  specs:
+    rails_layout (1.0.27)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -80,6 +86,9 @@ GEM
       railties (>= 3.0.0)
     faker (1.5.0)
       i18n (~> 0.5)
+    foundation-rails (5.5.3.2)
+      railties (>= 3.1.0)
+      sass (>= 3.3.0, < 3.5)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -197,10 +206,12 @@ DEPENDENCIES
   devise
   factory_girl_rails
   faker
+  foundation-rails
   jquery-rails
   pry-byebug
   pry-rails
   rails (= 4.2.1)
+  rails_layout!
   rspec-collection_matchers
   rspec-rails
   sass-rails (~> 5.0)
