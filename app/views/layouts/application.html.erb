@@ -19,9 +19,12 @@
        <%= image_tag('snack_icon.png', :alt => 'foodie')%>
        <%= yield %>
     </main>
-
-    <p class="notice"> <%= notice %></p>
-    <p class="alert"><%= alert %></p>
+  <% if notice.present? %>
+    <p class="alert-box success radius"> <%= notice %></p>
+      <% end %>
+  <% if alert.present? %>
+    <p class="alert-box alert round"><%= alert %></p>
+      <% end %>
     <p></p>
   </body>
 </html>
