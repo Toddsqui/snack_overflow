@@ -14,6 +14,7 @@ gem 'better_errors'
 gem 'binding_of_caller'
 gem 'devise'
 gem 'foundation-rails'
+gem 'high_voltage', '~> 2.4.0'
 
 ################################
 ##     Development Group      ##
