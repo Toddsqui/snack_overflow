@@ -204,7 +204,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootstrap-sass (~> 3.3.5)
-  devise
+  devise (>= 3.2.4)
   factory_girl_rails
   faker
   foundation-rails

@@ -12,7 +12,7 @@ gem 'sqlite3'
 gem 'bootstrap-sass','~> 3.3.5'
 gem 'better_errors'
 gem 'binding_of_caller'
-gem 'devise'
+gem 'devise', '>= 3.2.4'
 gem 'foundation-rails'
 gem 'high_voltage', '~> 2.4.0'
 
