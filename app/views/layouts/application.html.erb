@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-      
+
       <%= render 'layouts/navigation' %>
 
     </header>
@@ -20,6 +20,7 @@
        <%= render 'layouts/messages' %>
        <%= yield %>
     </main>
+    <%= image_tag 'snack_icon.png', size: "34x42", :style => 'margin-left: 44px; margin-top: 14px;' %>
 
   <% if notice.present? %>
     <p class="alert-box success radius"> <%= notice %></p>
