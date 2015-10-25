@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Snack Overflow" %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Snack Overflow" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%# Modernizr is required for Zurb Foundation %>
@@ -20,7 +21,11 @@
        <%= render 'layouts/messages' %>
        <%= yield %>
     </main>
-    <%= image_tag 'snack_icon.png', size: "34x42", :style => 'margin-left: 44px; margin-top: 14px;' %>
+    <div class="row">
+  <div class="small-2 large-4 columns"><%= image_tag 'snack_icon.png', size: "34x42", :style => 'margin-left: -14px; margin-top: 14px;' %></div>
+  <div class="small-4 large-4 columns"></div>
+  <div class="small-6 large-4 columns"></div>
+</div>
 
   <% if notice.present? %>
     <p class="alert-box success radius"> <%= notice %></p>
