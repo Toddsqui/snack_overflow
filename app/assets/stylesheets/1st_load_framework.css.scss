@@ -1,6 +1,6 @@
 // import the CSS framework
 @import "foundation";
-
+@import "foundation/components/buttons";
 // override for the 'Home' navigation link
 .top-bar .name {
   font-size: rem-calc(13);
@@ -89,4 +89,13 @@ section {
   @extend .button;
   @extend .radius;
   @extend .tiny;
+}
+
+$button-display: inline-block;
+
+.grey-button { @include button; }
+
+.grey-button {
+  background-color: "#ccc";
+  display: inline-block;
 }
