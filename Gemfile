@@ -15,6 +15,7 @@ gem 'binding_of_caller'
 gem 'devise', '>= 3.2.4'
 gem 'foundation-rails'
 gem 'high_voltage', '~> 2.4.0'
+gem 'thinking-sphinx', '~> 3.1', '>= 3.1.4'
 
 ################################
 ##     Development Group      ##
