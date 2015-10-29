@@ -92,10 +92,3 @@ section {
 }
 
 $button-display: inline-block;
-
-.grey-button { @include button; }
-
-.grey-button {
-  background-color: "#ccc";
-  display: inline-block;
-}
