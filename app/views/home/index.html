@@ -1,6 +1,15 @@
 <!-- this is where you make changes to the layout below -->
-<ul>
-<% @questions.each do |question| %>
-  <li><%= question.title %></li>
-<% end %>
-</ul>
+<br /><br />
+<div class="row">
+  <div class="large-7 columns">
+    <ul>
+    <% @questions.each do |question| %>
+        <li><%= question.title %></li>
+    <% end %>
+    </ul>
+ </div>
+<div class="large-5 columns">
+    <div class="last-updated" style="background-color: yellow">
+      <p>This is where you're going to use use the for loop</p>
+    </div>
+</div>
