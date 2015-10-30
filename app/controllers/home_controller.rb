@@ -4,6 +4,6 @@ class HomeController < ApplicationController
     @questions = Question.all
   end
 
-  
+
 
 end

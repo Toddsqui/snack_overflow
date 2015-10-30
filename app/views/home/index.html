@@ -9,7 +9,12 @@
     </ul>
  </div>
 <div class="large-5 columns">
-    <div class="last-updated" style="background-color: yellow">
-      <p>This is where you're going to use use the for loop</p>
+    <div class="last-updated" style="background-color: yellow;">
+      <p><u>Hot Meta Posts</u></p>
+        <ul>
+          <% @questions.order(updated_at: :desc).each do |question| %>
+            <li><%= question.updated_at %></li>
+          <% end %>
+        </ul>
     </div>
 </div>
