@@ -4,16 +4,19 @@
   <div class="large-7 columns">
     <ul>
     <% @questions.each do |question| %>
+    <hr>
         <li><%= question.title %></li>
     <% end %>
     </ul>
  </div>
 <div class="large-5 columns">
-    <div class="last-updated" style="background-color: yellow;">
-      <p><u>Hot Meta Posts</u></p>
+    <div class="last-updated" style="background-color: #FFF8DC;">
+      <p style="color: gray">Hot Meta Posts</p>
+      <hr style="width: 30%; position: relative; margin-left: 130px;">
         <ul>
           <% @questions.order(updated_at: :desc).each do |question| %>
-            <li><%= question.updated_at %></li>
+            <li><strong><%= question.title %></strong><br />
+            <%= question.updated_at %></li><br />
           <% end %>
         </ul>
     </div>
