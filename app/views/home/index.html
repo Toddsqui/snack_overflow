@@ -1,4 +1,5 @@
 <!-- this is where you make changes to the layout below -->
+
 <br /><br />
 <div class="row">
   <div class="large-7 columns">
@@ -6,17 +7,19 @@
     <% @questions.each do |question| %>
     <hr>
         <li><%= question.title %></li>
+        <li><%= question.user_id %></li>
     <% end %>
     </ul>
  </div>
 <div class="large-5 columns">
-    <div class="last-updated" style="background-color: #FFF8DC;">
+    <div class="last-updated" style="background-color: #FFF8DC; border: 1px solid #AE9078;">
       <p style="color: gray">Hot Meta Posts</p>
       <hr style="width: 30%; position: relative; margin-left: 130px;">
         <ul>
           <% @questions.order(updated_at: :desc).each do |question| %>
             <li><strong><%= question.title %></strong><br />
-            <%= question.updated_at %></li><br />
+            <%= question.updated_at %><br />
+            <%= question.user_id %></li>
           <% end %>
         </ul>
     </div>
