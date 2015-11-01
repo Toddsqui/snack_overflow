@@ -1,11 +1,13 @@
 <%# navigation styled for Zurb Foundation 5 %>
 <nav class="top-bar" data-topbar>
   <ul class="title-area">
-    <li class="name"><%= link_to 'Snack Overflow', root_path %></li>
+
     <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
   </ul>
   <div class="top-bar-section">
     <ul>
+          <li class="white"><i class="fa fa-cutlery" style="color: white; margin-left: 17px; margin-top: 10px; width: 25px; height: 25px;"></i></li>
+          <li class="name"><%= link_to 'Snack Overflow', root_path %></li>
       <%= render 'layouts/navigation_links' %>
     </ul>
   </div>
