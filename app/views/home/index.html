@@ -1,6 +1,8 @@
 <!-- this is where you make changes to the layout below -->
 
 <br /><br />
+
+<!-- MAIN POST -->
 <div class="row">
   <div class="large-7 columns">
     <ul>
@@ -8,9 +10,21 @@
     <hr>
         <li><%= question.title %></li>
         <li><%= question.user_id %></li>
+        <li><%= question.user.email %></li>
+        <li><%= question.user.created_at.to_formatted_s(:long) %></li>
+
     <% end %>
     </ul>
  </div>
+
+<!-- END OF MAIN POSTS -->
+
+
+<!-- *~*~*~*~**~*~*~ -->
+
+
+<!-- SIDE BAR WITH HOT POSTS -->
+
 <div class="large-5 columns">
     <div class="last-updated" style="background-color: #FFF8DC; border: 1px solid #AE9078;">
       <p style="color: gray">Hot Meta Posts</p>
@@ -24,3 +38,5 @@
         </ul>
     </div>
 </div>
+
+<!-- END OF SIDE POSTS -->
