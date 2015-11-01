@@ -1,0 +1,2 @@
+module NewQuestionHelper
+end
