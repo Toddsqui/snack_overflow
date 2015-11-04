@@ -8,7 +8,7 @@
     <ul>
     <% @questions.each do |question| %>
     <hr>
-        <li><%= question.title %></li>
+        <li><%= link_to 'Question', single_question_path(@single_question) %></li>
         <li><%= question.user_id %></li>
         <li><%= question.user.email %></li>
         <li><%= question.user.created_at.to_formatted_s(:long) %></li>
